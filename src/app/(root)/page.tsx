@@ -9,7 +9,7 @@ const HomePage = () => {
         <Image src={"/icons/Map.png"} alt="Map" height={832} width={535} />
       </div>
       <div className="col-span-7 flex flex-col gap-[6px]">
-        {housesInfo.map((house, idx) => (
+        {housesInfo.slice(0, 4).map((house, idx) => (
           <HouseCard key={idx} data={house} />
         ))}
       </div>
