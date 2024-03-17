@@ -36,6 +36,9 @@ body {
   .center-vnh {
     @apply flex items-center justify-center;
   }
+  .header-btn {
+    @apply bg-btnColor text-white py-[14px] px-[40px] rounded-full center-vnh gap-[8.33px] text-[16px] font-medium leading-[24px];
+  }
 }
 
 @layer utilities {
