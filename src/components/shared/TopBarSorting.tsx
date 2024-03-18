@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TopBarSorting = () => {
   return (
-    <section className="flex items-center justify-end gap-[33px] m-[19px]">
+    <section className="flex items-center justify-end">
       <div className="p-3 flex items-center gap-[8px]">
         <span>Sales</span>
         <Image src={"/icons/Toggle.png"} alt="Toggle" height={20} width={51} />

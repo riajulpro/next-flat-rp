@@ -4,7 +4,7 @@ import Logo from "../shared/Logo";
 
 const Header = () => {
   return (
-    <header>
+    <header className="h-[76px]">
       <article className="flex justify-between items-center">
         <Logo />
         <section className="lg:ml-[33.56px] lg:mr-auto flex items-center gap-[19.34px]">

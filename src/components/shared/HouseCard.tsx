@@ -55,7 +55,7 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
   };
 
   return (
-    <article className="card-container">
+    <article className="card-container mb-[6px]">
       <section className="card-thumbnail">
         {data.images.map((img, i) => (
           <div

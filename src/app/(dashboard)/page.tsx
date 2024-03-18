@@ -5,19 +5,21 @@ import { housesInfo } from "@/utils/mocks/HouseData";
 
 const HomePage = () => {
   return (
-    <article>
-      <TopBarSorting />
-      <section className="m-4 mb-24 grid lg:grid-cols-12 gap-[6px]">
-        <div className="col-span-5">
-          <GoogleMap />
+    <main className="w-full h-full flex gap-[6px]">
+      <div className="w-full h-full">
+        <GoogleMap />
+      </div>
+      <div className="w-[598px] flex flex-col">
+        <div className="h-[50px]">
+          <TopBarSorting />
         </div>
-        <div className="col-span-7 flex flex-col gap-[6px]">
-          {housesInfo.slice(0, 4).map((house, idx) => (
+        <div className="w-full h-full overflow-y-auto overflow-x-hidden">
+          {housesInfo.map((house, idx) => (
             <HouseCard key={idx} data={house} />
           ))}
         </div>
-      </section>
-    </article>
+      </div>
+    </main>
   );
 };
 
