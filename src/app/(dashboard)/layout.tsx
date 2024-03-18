@@ -1,5 +1,6 @@
 import Header from "@/components/ui/Header";
 import Sidebar from "@/components/ui/Sidebar";
+import SidebarStateWrapper from "@/contexts/SidebarControl";
 import SidebarControl from "@/contexts/SidebarControl";
 
 export default function DashboardLayout({
@@ -8,7 +9,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SidebarControl>
+    <SidebarStateWrapper>
       <article className="flex flex-col justify-between h-screen w-screen overflow-hidden">
         <Header />
         <section className="custom-height w-full flex justify-center items-start">
@@ -16,6 +17,6 @@ export default function DashboardLayout({
           {children}
         </section>
       </article>
-    </SidebarControl>
+    </SidebarStateWrapper>
   );
 }

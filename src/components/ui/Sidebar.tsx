@@ -1,12 +1,12 @@
 "use client";
 
-import { SidebarContext } from "@/contexts/SidebarControl";
+import { SidebarContext, SidebarState } from "@/contexts/SidebarControl";
 import { NavMenu } from "@/utils/mocks/NavItems";
 import Image from "next/image";
 import { useContext } from "react";
 
 const Sidebar = () => {
-  const { sidebar, setSidebar } = useContext(SidebarContext);
+  const { sidebar, setSidebar } = useContext(SidebarContext)! as SidebarState;
 
   return (
     <aside className="relative h-full">

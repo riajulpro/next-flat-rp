@@ -1,19 +1,27 @@
 "use client";
 
-import React, { createContext, useState, ReactNode } from "react";
+import {
+  createContext,
+  useState,
+  ReactNode,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
-interface SidebarState {
+export interface SidebarState {
   sidebar: boolean;
-  setSidebar: React.Dispatch<React.SetStateAction<boolean>>;
+  setSidebar: Dispatch<SetStateAction<boolean>>;
 }
 
 export const SidebarContext = createContext<SidebarState | null>(null);
 
-interface SidebarControlProps {
+interface SidebarStateWrapperProps {
   children: ReactNode;
 }
 
-const SidebarControl: React.FC<SidebarControlProps> = ({ children }) => {
+const SidebarStateWrapper: React.FC<SidebarStateWrapperProps> = ({
+  children,
+}) => {
   const [sidebar, setSidebar] = useState<boolean>(false);
 
   const states: SidebarState = {
@@ -26,4 +34,4 @@ const SidebarControl: React.FC<SidebarControlProps> = ({ children }) => {
   );
 };
 
-export default SidebarControl;
+export default SidebarStateWrapper;
