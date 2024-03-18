@@ -1,6 +1,6 @@
 "use client";
 
-import { LeftArrow, LinkIcon } from "@/utils/icons/Icons";
+import { Eye, LeftArrow, LinkIcon } from "@/utils/icons/Icons";
 import { CardTopIcons } from "@/utils/mocks/CardTopIcons";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +12,8 @@ type DataType = {
   subName: string;
   rooms: string[];
   price: string;
+  views: string;
+  since: string;
   images: string[];
   links: { href: string }[];
 };
@@ -103,6 +105,15 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
                   onClick={() => setSelected(i)}
                 ></div>
               ))}
+          </div>
+        </div>
+
+        <div className="absolute z-40 top-2 left-2 flex gap-2">
+          <div className="text-xs center-vnh bg-black/50 text-white rounded py-1 px-2">
+            <Eye /> {data.views}
+          </div>
+          <div className="text-xs center-vnh bg-black/50 text-white rounded py-1 px-2">
+            {data.since}
           </div>
         </div>
       </section>

@@ -3,6 +3,8 @@ interface HouseDataType {
   subName: string;
   rooms: string[];
   price: string;
+  views: string;
+  since: string;
   images: string[];
   links: { href: string }[];
 }
@@ -13,6 +15,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -37,6 +41,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -61,6 +67,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -85,6 +93,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -109,6 +119,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -133,6 +145,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
@@ -157,6 +171,8 @@ export const housesInfo: HouseDataType[] = [
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
     price: "124 600 €",
+    views: "95",
+    since: "1999",
     images: [
       "/images/houseLocation1.png",
       "/images/houseLocation2.jpg",
