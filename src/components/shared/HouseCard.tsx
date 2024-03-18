@@ -1,6 +1,7 @@
 "use client";
 
 import { LeftArrow, LinkIcon } from "@/utils/icons/Icons";
+import { CardTopIcons } from "@/utils/mocks/CardTopIcons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -52,9 +53,8 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
   };
 
   return (
-    <div className="w-full min-h-[195px] bg-[#D9D9D9] pl-[7.3px] pr-[5.8px] pt-[7.19px] flex justify-start items-start gap-[16px] rounded-[10px]">
-      {/* images */}
-      <div className="min-w-[252.87px] h-[176.81px] rounded-[5px] overflow-hidden relative">
+    <article className="card-container">
+      <section className="card-thumbnail">
         {data.images.map((img, i) => (
           <div
             key={"img" + i}
@@ -72,7 +72,7 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
           </div>
         ))}
 
-        <div className="absolute w-full h-full flex  justify-between items-center">
+        <div className="absolute w-full h-full flex justify-between items-center">
           <button onClick={prevImg}>
             <Image
               src={"/icons/arrow-left.png"}
@@ -105,13 +105,22 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
               ))}
           </div>
         </div>
-      </div>
-
-      {/* details */}
-      <div className="w-full flex flex-col items-start justify-start gap-[2.66px] pt-[2.87px] relative">
+      </section>
+      <section className="card-details">
         <p className="absolute text-[24px] font-[700] top-[73px] right-[23px]">
           {data.price}
         </p>
+
+        <div className="absolute top-0 right-0 flex justify-end items-center gap-[10px]">
+          {CardTopIcons.map((item, idx) => (
+            <div
+              key={idx}
+              className="h-[32px] w-[32px] bg-white rounded-full center-vnh"
+            >
+              {item.icon}
+            </div>
+          ))}
+        </div>
 
         <div className="flex flex-col gap-[5.91px]">
           <div className="flex flex-col gap-[0px]">
@@ -145,8 +154,8 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
             Apply <LeftArrow />
           </button>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 

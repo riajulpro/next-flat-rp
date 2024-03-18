@@ -20,6 +20,7 @@ const Sidebar = () => {
             alt="Filter Icon"
             height={24}
             width={24}
+            className="drop-shadow-custom rounded-full"
           />
         </section>
         <section className="mt-auto flex flex-col gap-3">
