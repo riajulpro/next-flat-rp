@@ -5,6 +5,7 @@ import {
   HomeOutline,
   ProductOutline,
   RoomOutline,
+  SalesOutline,
   ScheduleOutline,
 } from "../icons/SidebarIcons";
 
@@ -45,7 +46,7 @@ export const NavMenu = [
     downArrow: null,
   },
   {
-    icon: <HomeOutline />,
+    icon: <SalesOutline />,
     title: "Sales",
     downArrow: <DownArrow />,
   },

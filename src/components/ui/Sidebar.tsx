@@ -23,7 +23,7 @@ const Sidebar = () => {
             className="drop-shadow-custom rounded-full"
           />
         </section>
-        <section className="mt-auto flex flex-col gap-3">
+        <section className="mb-[76px] mt-auto flex flex-col gap-3">
           {NavMenu.map((nav, idx) => (
             <div
               key={nav.title}
