@@ -135,7 +135,9 @@ const HouseCard: React.FC<propsType> = ({ data }) => {
 
         <div className="flex flex-col gap-[5.91px]">
           <div className="flex flex-col gap-[0px]">
-            <h1 className="text-[24px] font-[500]">{data.name}</h1>
+            <h1 className="text-[24px] font-[500]">
+              <Link href={"/details"}>{data.name}</Link>
+            </h1>
             <p className="text-[16px] font-[300] italic">{data.subName}</p>
           </div>
 

@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="w-full h-full">
         <GoogleMap />
       </div>
-      <div className="w-[598px] flex flex-col">
+      <div className="min-w-[598px] max-w-[598px] flex flex-col">
         <div className="h-[50px]">
           <TopBarSorting />
         </div>
