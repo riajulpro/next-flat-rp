@@ -5,7 +5,7 @@ import CreateAd from "./CreateAd";
 
 const HeaderRightItems = () => {
   return (
-    <section className="flex justify-between items-center">
+    <section className="hidden lg:flex justify-between items-center">
       <div className="mr-[18.33px]">
         <ThemeToggler />
       </div>
