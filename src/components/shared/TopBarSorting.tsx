@@ -4,20 +4,20 @@ import Image from "next/image";
 
 const TopBarSorting = () => {
   return (
-    <section className="flex items-center justify-end">
+    <section className="bg-white flex items-center justify-end">
       <div className="p-3 flex items-center gap-[8px]">
-        <span>Sales</span>
+        <span className="text-xs md:text-base">Sales</span>
         <Image src={"/icons/Toggle.png"} alt="Toggle" height={20} width={51} />
-        <span>Rents</span>
+        <span className="text-xs md:text-base">Rents</span>
       </div>
       <div className="p-3 flex items-center gap-[16px]">
         <SalesOutline />
-        <span>Price</span>
+        <span className="text-xs md:text-base">Price</span>
         <DownArrow />
       </div>
       <div className="p-3 flex items-center gap-[16px]">
         <Sorting />
-        <span>Sort By</span>
+        <span className="text-xs md:text-base">Sort By</span>
         <DownArrow />
       </div>
     </section>

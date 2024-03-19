@@ -5,68 +5,58 @@ import StarsRating from "./StarsRating";
 const RatingRightInfo = () => {
   return (
     <>
-      <div className="flex justify-between">
-        <p className="flex items-center gap-1">
-          <span className="text-xs">Apartment Experience (22)</span>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-1 justify-between">
+          <div className="text-[10px]">Apartment Experience(22)</div>
           <Question />
-        </p>
+        </div>
+        <div className="flex items-center gap-1 justify-between">
+          <StarsRating />
+          <div className="text-xl font-bold">3.5</div>
+        </div>
+      </div>
+
+      <div className="flex justify-between">
         <div className="flex items-center gap-1">
-          <span className="h-6">
-            <StarsRating />
-          </span>
+          <div className="text-[10px]">Location (21)</div>
+          <Question />
+        </div>
+        <div className="flex items-center gap-1">
+          <StarsRating />
+          <div className="text-xl font-bold">3.5</div>
+        </div>
+      </div>
+
+      <div className="flex justify-between">
+        <div className="flex items-center gap-1">
+          <div className="text-[10px]">Cleanliness (21)</div>
+          <Question />
+        </div>
+        <div className="flex items-center gap-1">
+          <StarsRating />
           <span className="text-xl font-bold">3.5</span>
         </div>
       </div>
 
       <div className="flex justify-between">
-        <p className="flex items-center gap-1">
-          <span className="text-xs">Location (21)</span>
-          <Question />
-        </p>
         <div className="flex items-center gap-1">
-          <span className="h-6">
-            <StarsRating />
-          </span>
-          <span className="text-xl font-bold">3.5</span>
+          <div className="text-[10px]">Condition, Comfort, Amenities(22)</div>
+          <Question />
+        </div>
+        <div className="flex items-center gap-1">
+          <StarsRating />
+          <div className="text-xl font-bold">3.5</div>
         </div>
       </div>
 
       <div className="flex justify-between">
-        <p className="flex items-center gap-1">
-          <span className="text-">Cleanliness (21)</span>
-          <Question />
-        </p>
         <div className="flex items-center gap-1">
-          <span className="h-6">
-            <StarsRating />
-          </span>
-          <span className="text-xl font-bold">3.5</span>
+          <div className="text-[10px]">Building (21)</div>
+          <Question />
         </div>
-      </div>
-
-      <div className="flex justify-between">
-        <p className="flex items-center gap-1">
-          <span className="text-[11px]">Condition, Comfort, Amenities(22)</span>
-          <Question />
-        </p>
         <div className="flex items-center gap-1">
-          <span className="h-6">
-            <StarsRating />
-          </span>
-          <span className="text-xl font-bold">3.5</span>
-        </div>
-      </div>
-
-      <div className="flex justify-between">
-        <p className="flex items-center gap-1">
-          <span className="text-xs">Building (21)</span>
-          <Question />
-        </p>
-        <div className="flex items-center gap-1">
-          <span className="h-6">
-            <StarsRating />
-          </span>
-          <span className="text-xl font-bold">3.5</span>
+          <StarsRating />
+          <div className="text-xl font-bold">3.5</div>
         </div>
       </div>
     </>

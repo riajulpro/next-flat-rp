@@ -1,4 +1,5 @@
 interface HouseDataType {
+  id?: string;
   name: string;
   subName: string;
   rooms: string[];
@@ -11,6 +12,7 @@ interface HouseDataType {
 
 export const housesInfo: HouseDataType[] = [
   {
+    id: "1",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -37,6 +39,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "2",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -63,6 +66,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "3",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -89,6 +93,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "4",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -115,6 +120,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "5",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -141,6 +147,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "6",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],
@@ -167,6 +174,7 @@ export const housesInfo: HouseDataType[] = [
     ],
   },
   {
+    id: "7",
     name: "Flat - 123 m²",
     subName: "Dublin 01 - IFSC",
     rooms: ["5 Room", "2 Bedroom", "5 Room"],

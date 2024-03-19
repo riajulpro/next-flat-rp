@@ -9,8 +9,8 @@ import { DetailsIcons } from "@/utils/mocks/DetailsIcons";
 
 const DetailsPage = () => {
   return (
-    <div className="flex justify-center gap-[22px] overflow-y-auto mt-5">
-      <div className="w-[622px] h-full">
+    <div className="flex flex-col md:flex-row md:justify-center gap-[22px] overflow-y-auto mt-5">
+      <div className="lg:min-w-[622px] lg:max-w-[622px] h-full">
         <div className="px-[3px]">
           <div className="flex justify-between items-start">
             <div className="text-xl font-bold">Flat</div>
@@ -29,10 +29,10 @@ const DetailsPage = () => {
             <DetailsImageContainer />
           </div>
           <DetailsDescription />
-          <div className="h-[124px] w-[574px] mx-auto bg-[#8D4E83] center-vnh">
+          <div className="h-[124px] px-[3px] bg-[#8D4E83] center-vnh">
             Google Advertisement every 4 ads
           </div>
-          <div className="mt-[14px] w-[574px] mx-auto center-vnh grid grid-cols-2 gap-3">
+          <div className="mt-[14px] px-[3px] center-vnh grid grid-cols-2 gap-3">
             <div className="flex items-center gap-3 border rounded-md px-5 py-4">
               <Paper />
               <div>
@@ -58,10 +58,10 @@ const DetailsPage = () => {
             vero?
           </div>
           <div className="mt-[14px] grid grid-cols-12 bg-gray-100 p-1 mb-[76px] rounded">
-            <div className="col-span-4 border-r flex flex-col justify-between gap-2">
+            <div className="col-span-5 border-r flex flex-col justify-between gap-2 p-3">
               <RatingLeftInfo />
             </div>
-            <div className="col-span-8">
+            <div className="col-span-7 p-3">
               <RatingRightInfo />
             </div>
           </div>
@@ -69,8 +69,8 @@ const DetailsPage = () => {
         </div>
       </div>
       {/* right side content */}
-      <div className="w-[746px]">
-        <div className="w-[746px] h-[929px]">
+      <div className="lg:max-w-[746px] lg:min-w-[746px]">
+        <div className="md:w-[746px] h-[500px] md:h-[929px]">
           <GoogleMap />
         </div>
         <div className="mt-[14px] mb-[100px]">

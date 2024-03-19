@@ -11,7 +11,7 @@ const DetailsHeader = () => {
     <div className="flex items-center justify-between">
       <Logo />
       <HeaderSearch />
-      <div className="flex items-center justify-center gap-6">
+      <div className="hidden md:flex items-center justify-center gap-6">
         <CreateAd />
         <ThemeToggler />
         <FlagDrop />

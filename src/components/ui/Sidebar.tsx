@@ -9,10 +9,12 @@ const Sidebar = () => {
   const { sidebar, setSidebar } = useContext(SidebarContext)! as SidebarState;
 
   return (
-    <aside className="absolute -left-[87px] top-0 bottom-0 bg-white z-50 lg:relative h-full">
+    <aside className={`bg-white relative h-full`}>
       <article
         className={`${
-          sidebar ? "w-[86px]" : "lg:w-[248px]"
+          sidebar
+            ? "w-[86px] relative top-[76px] md:top-0"
+            : "w-[248px] absolute bottom-0 top-[76px] left-0 z-50 bg-white md:static md:top-0"
         } h-full p-5 flex flex-col justify-between duration-150`}
       >
         <section className="flex justify-between items-center gap-3 p-2 border rounded-md">
