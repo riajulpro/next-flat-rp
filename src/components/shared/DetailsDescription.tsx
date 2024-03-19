@@ -1,4 +1,6 @@
 import { LeftArrow, TikMark, WarningIcon, Wrong } from "@/utils/icons/Icons";
+import Requirements from "./Requirements";
+import ApplyButton from "./ApplyButton";
 
 const DetailsDescription = () => {
   return (
@@ -6,9 +8,7 @@ const DetailsDescription = () => {
       <div className="flex justify-between items-center mb-5">
         <div className="italic">Dublin 01 - IFSC</div>
         <div className="font-extrabold text-2xl">124 600 €</div>
-        <button className="bg-gray-100 rounded-md p-2 flex items-center justify-center gap-2">
-          Apply <LeftArrow />
-        </button>
+        <ApplyButton />
       </div>
       <div className="flex justify-between items-stretch">
         <div className="self-start">
@@ -27,20 +27,7 @@ const DetailsDescription = () => {
           <p>2 Bedroom</p>
           <p>5 Room</p>
         </div>
-        <div className="self-end">
-          <p className="flex gap-1 items-center">
-            <TikMark /> Requirements 1
-          </p>
-          <p className="flex gap-1 items-center">
-            <TikMark /> Requirements 2
-          </p>
-          <p className="flex gap-1 items-center">
-            <WarningIcon /> Requirements 3
-          </p>
-          <p className="flex gap-1 items-center">
-            <Wrong /> Requirements 4
-          </p>
-        </div>
+        <Requirements className="self-end" />
       </div>
     </div>
   );
