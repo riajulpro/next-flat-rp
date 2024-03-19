@@ -5,11 +5,11 @@ import { housesInfo } from "@/utils/mocks/HouseData";
 
 const HomePage = () => {
   return (
-    <main className="w-full h-full flex gap-[6px]">
+    <main className="w-full h-full flex flex-col lg:flex-row gap-[6px]">
       <div className="w-full h-full">
         <GoogleMap />
       </div>
-      <div className="min-w-[598px] max-w-[598px] flex flex-col">
+      <div className="lg:min-w-[598px] lg:max-w-[598px] flex flex-col">
         <div className="h-[50px]">
           <TopBarSorting />
         </div>

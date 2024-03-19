@@ -9,7 +9,7 @@ const Sidebar = () => {
   const { sidebar, setSidebar } = useContext(SidebarContext)! as SidebarState;
 
   return (
-    <aside className="relative h-full">
+    <aside className="absolute left-0 top-0 bottom-0 bg-white z-50 lg:relative h-full">
       <article
         className={`${
           sidebar ? "w-[86px]" : "lg:w-[248px]"
