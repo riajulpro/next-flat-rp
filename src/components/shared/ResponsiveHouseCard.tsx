@@ -111,7 +111,7 @@ const ResponsiveHouseCard: React.FC<propsType> = ({ data }) => {
             ))}
           </div>
 
-          <Link href={"/details"}>
+          <Link href={"/apply"}>
             <ApplyButton />
           </Link>
         </div>

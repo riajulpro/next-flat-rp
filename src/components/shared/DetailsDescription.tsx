@@ -1,6 +1,7 @@
 import { LeftArrow, TikMark, WarningIcon, Wrong } from "@/utils/icons/Icons";
 import Requirements from "./Requirements";
 import ApplyButton from "./ApplyButton";
+import Link from "next/link";
 
 const DetailsDescription = () => {
   return (
@@ -8,7 +9,9 @@ const DetailsDescription = () => {
       <div className="flex justify-between items-center mb-5">
         <div className="italic">Dublin 01 - IFSC</div>
         <div className="font-extrabold text-2xl">124 600 €</div>
-        <ApplyButton />
+        <Link href={"/apply"}>
+          <ApplyButton />
+        </Link>
       </div>
       <div className="flex justify-between items-stretch">
         <div className="self-start">
