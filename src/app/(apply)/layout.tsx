@@ -20,7 +20,7 @@ const ApplyLayout = ({ children }: { children: React.ReactNode }) => {
             ))}
           </div>
         </div>
-        <div className="mt-5 md:mt-5 md:w-full lg:min-w-[485px] lg:max-w-[485px] lg:overflow-y-auto smoothBar lg:h-full">
+        <div className="mt-5 md:mt-5 lg:mt-0 md:w-full lg:min-w-[485px] lg:max-w-[485px] lg:overflow-y-auto smoothBar lg:h-full">
           {children}
         </div>
       </div>

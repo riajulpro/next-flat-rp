@@ -9,7 +9,7 @@ import Requirements from "@/components/shared/Requirements";
 
 const ApplyPage = () => {
   return (
-    <div className="px-2">
+    <>
       <DetailsTopSection />
       <div className="h-[297px] mt-[14px]">
         <DetailsImageContainer />
@@ -62,7 +62,7 @@ const ApplyPage = () => {
         </div>
       </div>
       <div className="mt-[14px] font-semibold text-lg">Reviews</div>
-    </div>
+    </>
   );
 };
 
