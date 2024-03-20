@@ -56,6 +56,10 @@ body {
   background-color: #c1c1c1;
 }
 
+.container-height {
+  height: calc(100vh - 76px);
+}
+
 /* card wrapper */
 .card-sm-h {
   height: calc(100vh - 132px);

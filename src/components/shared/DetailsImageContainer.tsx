@@ -2,7 +2,7 @@
 
 import { images } from "@/utils/mocks/DetailsImages";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const DetailsImageContainer = () => {
   const [selected, setSelected] = useState<number>(0);

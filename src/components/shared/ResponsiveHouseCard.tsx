@@ -10,6 +10,7 @@ import {
 } from "@/utils/icons/Icons";
 import Link from "next/link";
 import CarouselImage from "./CarouselImage";
+import ApplyButton from "./ApplyButton";
 
 type DataType = {
   id?: string;
@@ -29,7 +30,7 @@ interface propsType {
 
 const ResponsiveHouseCard: React.FC<propsType> = ({ data }) => {
   return (
-    <div className="w-full lg:min-h-[195px] h-auto  bg-[#D9D9D9] pl-[7.3px] pr-[5.8px] pt-[7.19px] sm:pt-[0px] lg:pt-[7.19px] flex justify-start flex-col items-center lg:items-start gap-[16px] rounded-[10px] sm:flex-row">
+    <div className="px-1 w-full lg:min-h-[195px] h-auto bg-[#D9D9D9] pl-[7.3px] pr-[5.8px] pt-[7.19px] sm:pt-[0px] lg:pt-[7.19px] flex justify-start flex-col items-center lg:items-start gap-[16px] rounded-[10px] sm:flex-row">
       {/* image slider */}
       <div className="w-full sm:min-w-[252.87px] h-[176.81px] rounded-[5px] overflow-hidden relative">
         <CarouselImage imgData={data.images} />
@@ -44,7 +45,7 @@ const ResponsiveHouseCard: React.FC<propsType> = ({ data }) => {
           <p className="text-[10px] font-[9000]">{data.since}</p>
         </div>
 
-        {/* activity optiion  for small device */}
+        {/* activity option  for small device */}
         <div className="flex sm:hidden justify-between items-center gap-[9.64px] absolute top-[8px] right-[5.8px]">
           <div className="rounded-full center-vnh w-[32px] h-[32px] bg-[#E2E8F0]">
             <Share />
@@ -111,9 +112,7 @@ const ResponsiveHouseCard: React.FC<propsType> = ({ data }) => {
           </div>
 
           <Link href={"/details"}>
-            <button className="w-[93px] h-[40px] px-[14px] flex items-center gap-[10px] bg-white rounded-[6px]">
-              Apply <LeftArrow />
-            </button>
+            <ApplyButton />
           </Link>
         </div>
       </div>
