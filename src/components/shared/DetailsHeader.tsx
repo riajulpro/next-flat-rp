@@ -5,6 +5,7 @@ import HeaderSearch from "./HeaderSearch";
 import Logo from "./Logo";
 import ThemeToggler from "./ThemeToggler";
 import Image from "next/image";
+import Link from "next/link";
 
 const DetailsHeader = () => {
   return (
@@ -12,7 +13,9 @@ const DetailsHeader = () => {
       <Logo />
       <HeaderSearch />
       <div className="hidden md:flex items-center justify-center gap-6">
-        <CreateAd />
+        <Link href={"/create-an-ad"}>
+          <CreateAd />
+        </Link>
         <ThemeToggler />
         <FlagDrop />
         <div className="bg-gray-100 rounded-full p-2">
