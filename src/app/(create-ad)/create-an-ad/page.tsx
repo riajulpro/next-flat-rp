@@ -1,4 +1,5 @@
 import GoogleMap from "@/components/shared/GoogleMap";
+import BoxItems from "@/components/shared/Inputs/BoxItems";
 import CheckBox from "@/components/shared/Inputs/CheckBox";
 import LabelTopInput from "@/components/shared/Inputs/LabelTopInput";
 import PhotoGrid from "@/components/shared/Inputs/PhotoGrid";
@@ -11,13 +12,13 @@ import Image from "next/image";
 
 const CreateAnAd = () => {
   return (
-    <article className="h-full w-full">
+    <article className="h-full w-full p-3 lg:p-0">
       <section className="text-center">
         <Title text="Create a new ads" />
         <Subtitle text="Welcome to our form where you add as much information as need about your property" />
       </section>
       <section className="lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px] lg:items-center">
-        <div className="flex-1 flex gap-[30px] items-end">
+        <div className="flex-1 flex gap-[30px] items-end flex-col lg:flex-row">
           <LabelTopInput
             label="Email Address"
             placeholder="majd.najih@gmail.com"
@@ -181,6 +182,9 @@ const CreateAnAd = () => {
         </div>
         <div className="flex-1">
           <PhotoGrid />
+          <div className="mt-[38px]">
+            <BoxItems />
+          </div>
         </div>
       </section>
     </article>
