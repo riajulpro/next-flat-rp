@@ -1,12 +1,17 @@
 import GoogleMap from "@/components/shared/GoogleMap";
+import BedroomSection from "@/components/shared/Inputs/BedroomSection";
 import BoxItems from "@/components/shared/Inputs/BoxItems";
 import CheckBox from "@/components/shared/Inputs/CheckBox";
+import DisableItem from "@/components/shared/Inputs/DisableItem";
+import EnableItem from "@/components/shared/Inputs/EnableItem";
+import HrTitle from "@/components/shared/Inputs/HrTitle";
 import LabelTopInput from "@/components/shared/Inputs/LabelTopInput";
 import PhotoGrid from "@/components/shared/Inputs/PhotoGrid";
 import PhotoGridTwo from "@/components/shared/Inputs/PhotoGridTwo";
 import SectionInput from "@/components/shared/Inputs/SelectionInput";
 import Subtitle from "@/components/shared/Inputs/Subtitle";
 import Title from "@/components/shared/Inputs/Title";
+import WhatIsInclude from "@/components/shared/Inputs/WhatIsInclude";
 import { EditPen, PlusIcon } from "@/utils/icons/Icons";
 import Image from "next/image";
 
@@ -187,6 +192,11 @@ const CreateAnAd = () => {
           </div>
         </div>
       </section>
+      <BedroomSection bedroom="Bedroom 1" isUrgent={false} />
+      <BedroomSection bedroom="Bedroom 2" isUrgent={true} />
+      <BedroomSection bedroom="Bedroom 3" isUrgent={false} />
+      <BedroomSection bedroom="Bedroom 4" isUrgent={true} />
+      <br />
     </article>
   );
 };
