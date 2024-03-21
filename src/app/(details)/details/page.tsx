@@ -4,7 +4,7 @@ import RenderLineChart from "@/components/shared/RenderLineChart";
 
 const DetailsPage = () => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-center gap-[22px] overflow-y-auto mt-5">
+    <div className="flex flex-col lg:flex-row lg:justify-center gap-[22px] overflow-y-auto mt-5">
       <Details />
       {/* right side content */}
       <div className="lg:max-w-[746px] lg:min-w-[746px]">

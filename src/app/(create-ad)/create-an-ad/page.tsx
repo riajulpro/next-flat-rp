@@ -1,4 +1,5 @@
 import GoogleMap from "@/components/shared/GoogleMap";
+import AddABedroom from "@/components/shared/Inputs/AddABedroom";
 import BedroomSection from "@/components/shared/Inputs/BedroomSection";
 import BoxItems from "@/components/shared/Inputs/BoxItems";
 import CheckBox from "@/components/shared/Inputs/CheckBox";
@@ -22,8 +23,8 @@ const CreateAnAd = () => {
         <Title text="Create a new ads" />
         <Subtitle text="Welcome to our form where you add as much information as need about your property" />
       </section>
-      <section className="lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px] lg:items-center">
-        <div className="flex-1 flex gap-[30px] items-end flex-col lg:flex-row">
+      <section className="mt-4 lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px] lg:items-center">
+        <div className="flex-1 flex gap-[30px] lg:items-end flex-col lg:flex-row">
           <LabelTopInput
             label="Email Address"
             placeholder="majd.najih@gmail.com"
@@ -46,9 +47,9 @@ const CreateAnAd = () => {
           <Subtitle text="Please enter your email address and phone number to not lose your progress" />
         </div>
       </section>
-      <section className="lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px]">
+      <section className="mt-[20px] lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px]">
         <div className="flex-1">
-          <div className="mb-[60px]">
+          <div className="lg:mb-[60px]">
             <Title text="Localization" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
@@ -65,8 +66,8 @@ const CreateAnAd = () => {
               inputWidth="lg:w-[377px]"
             />
           </div>
-          <div className="flex justify-between items-center mt-[50px]">
-            <div className="flex items-center gap-3">
+          <div className="flex justify-between items-center flex-col lg:flex-row mt-[50px]">
+            <div className="flex items-center flex-col lg:flex-row gap-3">
               <p className="font-light text-sm text-[#868686]">
                 5.354708943431563,-3.9874719330168893
               </p>{" "}
@@ -82,20 +83,20 @@ const CreateAnAd = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 max-h-[486px] min-h-[486px]">
+        <div className="flex-1 lg:max-h-[486px] lg:min-h-[486px]">
           <GoogleMap />
         </div>
       </section>
-      <section className="lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px]">
+      <section className="mt-[20px] lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px]">
         <div className="flex-1">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center justify-between flex-col lg:flex-row">
             <Title text="Basics information" />
             <LabelTopInput
               inputWidth="lg:w-[193px]"
               label="Property Owner Name"
             />
           </div>
-          <div className="flex gap-3 mt-[38px]">
+          <div className="flex gap-3 mt-3 lg:mt-[38px] flex-col lg:flex-row">
             <Image
               src={"/icons/sales-rent.png"}
               alt="Sales and Rent"
@@ -117,7 +118,7 @@ const CreateAnAd = () => {
               label="Property Owner email"
             />
           </div>
-          <div className="flex gap-3 mt-[38px]">
+          <div className="flex gap-3 mt-3 lg:mt-[38px] flex-col lg:flex-row">
             <LabelTopInput
               inputWidth="lg:w-[193px]"
               label="Property Type"
@@ -132,7 +133,7 @@ const CreateAnAd = () => {
             />
             <CheckBox text="Stay anonymous (out of the contract)" />
           </div>
-          <div className="flex gap-3 mt-[38px]">
+          <div className="flex gap-3 mt-3 lg:mt-[38px] flex-col lg:flex-row">
             <LabelTopInput
               inputWidth="lg:w-[157px]"
               label="Number of Room"
@@ -154,7 +155,7 @@ const CreateAnAd = () => {
               isRed={true}
             />
           </div>
-          <div className="flex items-center gap-5 mt-[38px]">
+          <div className="flex lg:items-center gap-5 mt-3 lg:mt-[38px] flex-col lg:flex-row">
             <LabelTopInput
               inputWidth="lg:w-[175px]"
               label="Number of Bedroom*"
@@ -169,7 +170,7 @@ const CreateAnAd = () => {
               </button>
             </div>
           </div>
-          <div className="flex gap-3 mt-[38px] mb-[10px]">
+          <div className="flex gap-3 mt-4 lg:mt-[38px] lg:mb-[10px] flex-col lg:flex-row">
             <LabelTopInput
               inputWidth="lg:w-[175px]"
               label="Number of Bathroom"
@@ -187,7 +188,7 @@ const CreateAnAd = () => {
         </div>
         <div className="flex-1">
           <PhotoGrid />
-          <div className="mt-[38px]">
+          <div className="mt-3 lg:mt-[38px]">
             <BoxItems />
           </div>
         </div>
@@ -197,6 +198,7 @@ const CreateAnAd = () => {
       <BedroomSection bedroom="Bedroom 3" isUrgent={false} />
       <BedroomSection bedroom="Bedroom 4" isUrgent={true} />
       <br />
+      <AddABedroom />
     </article>
   );
 };

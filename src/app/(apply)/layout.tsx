@@ -9,10 +9,10 @@ const ApplyLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="flex flex-col w-screen h-screen overflow-hidden">
       <DetailsHeader />
       <div className="main container-height w-full flex flex-col md:flex-row lg:justify-center gap-[4px] p-1 overflow-y-auto lg:overflow-auto md:flex-wrap lg:flex-nowrap">
-        <div className="md:w-full lg:min-w-[468px] lg:max-w-[468px] lg:h-full">
+        <div className="md:w-full lg:min-w-[415px] lg:max-w-[415px] lg:h-full">
           <GoogleMap />
         </div>
-        <div className="md:w-full lg:min-w-[475px] lg:max-w-[475px] lg:overflow-y-auto smoothBar lg:h-full">
+        <div className="md:w-full lg:min-w-[528px] lg:max-w-[528px] lg:overflow-y-auto smoothBar lg:h-full">
           <TopBarSorting />
           <div className="w-full overflow-x-hidden flex flex-col gap-1 mt-[10px]">
             {housesInfo.map((house, idx) => (

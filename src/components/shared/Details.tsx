@@ -26,7 +26,7 @@ const Details = ({ width }: { width?: string }) => {
           <DataCard title="2174" subTitle="Total Viewing" />
           <DataCard title="574" subTitle="Total Applies" />
         </div>
-        <div className="mt-[14px] line-clamp-4">
+        <div className="lg:mt-[14px] line-clamp-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
           distinctio laboriosam quasi cum obcaecati beatae, maiores
           reprehenderit, non similique praesentium dignissimos asperiores
@@ -34,15 +34,15 @@ const Details = ({ width }: { width?: string }) => {
           autem commodi optio voluptates odit sapiente beatae incidunt iure
           amet, nostrum quae placeat, eligendi cum cupiditate sunt! Nobis, vero?
         </div>
-        <div className="mt-[14px] grid grid-cols-12 bg-gray-100 p-1 mb-[76px] rounded">
-          <div className="col-span-5 border-r flex flex-col justify-between gap-2 p-3">
+        <div className="lg:mt-[14px] grid grid-cols-12 bg-gray-100 p-1 lg:mb-[76px] rounded">
+          <div className="col-span-12 lg:col-span-5 border-r flex flex-col justify-between gap-2 p-3">
             <RatingLeftInfo />
           </div>
-          <div className="col-span-7 p-3">
+          <div className="col-span-12 lg:col-span-7 p-3">
             <RatingRightInfo />
           </div>
         </div>
-        <div className="mt-[14px] font-semibold text-lg">Reviews</div>
+        <div className="lg:mt-[14px] font-semibold text-lg">Reviews</div>
       </div>
     </div>
   );

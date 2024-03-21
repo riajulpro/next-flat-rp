@@ -16,7 +16,7 @@ const BoxItems = () => {
   };
 
   return (
-    <div className="w-[492px] flex flex-wrap justify-start gap-[25px] items-center p-[10px] border-[1px] border-[#868686] rounded-[8px] min-h-[63px] relative">
+    <div className="lg:w-[492px] flex flex-wrap justify-start gap-[25px] items-center p-[10px] border-[1px] border-[#868686] rounded-[8px] min-h-[63px] relative">
       {sites.map((site, i) => (
         <div
           key={i}
@@ -26,7 +26,7 @@ const BoxItems = () => {
           <button onClick={() => handleCancel(i)}>
             <XMark />
           </button>
-          <p className="absolute top-[-15px] left-[15px] px-[6px] bg-white text-[#868686] font-[300] text-[14px]">
+          <p className="absolute top-[-15px] left-[15px] px-[6px] bg-white text-[#868686] font-[300] text-[12px] xsm:text-[14px]">
             Did you already publish this property somewhere else:
           </p>
         </div>

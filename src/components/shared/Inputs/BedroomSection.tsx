@@ -13,10 +13,10 @@ const BedroomSection = ({
   isUrgent?: boolean;
 }) => {
   return (
-    <div className="my-[40px]">
+    <div className="lg:my-[40px]">
       <HrTitle text={bedroom} />
-      <section className="lg:mt-[32px] flex flex-col lg:flex-row lg:gap-[50px]">
-        <div>
+      <section className="lg:mt-[32px] flex flex-col lg:flex-row gap-3 lg:gap-[50px]">
+        <div className="flex-1">
           <EnableItem text="Private Bedroom" />
           <EnableItem text="Private Balcony" />
           <div className="flex gap-3 items-start">
@@ -38,7 +38,7 @@ const BedroomSection = ({
               isRed={true}
             />
           </div>
-          <div className="flex gap-3 mt-[20px] items-stretch">
+          <div className="flex gap-3 mt-[20px] lg:items-stretch flex-col lg:flex-row">
             <div className="self-start">
               {isUrgent ? (
                 <DisableItem text="Already Rent" />
