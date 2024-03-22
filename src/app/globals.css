@@ -31,6 +31,10 @@ body {
   height: calc(100% - 76px);
 }
 
+.custom-width {
+  width: calc(100vw - 86px);
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;

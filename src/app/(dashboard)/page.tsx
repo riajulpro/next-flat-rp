@@ -6,7 +6,7 @@ import { housesInfo } from "@/utils/mocks/HouseData";
 
 const HomePage = () => {
   return (
-    <main className="w-full h-full flex flex-col lg:flex-row gap-[6px]">
+    <main className="custom-width ml-auto lg:w-full h-full flex flex-col lg:flex-row gap-[6px]">
       <div className="w-full h-full mt-[80px] md:mt-0">
         <GoogleMap />
       </div>

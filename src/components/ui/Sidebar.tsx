@@ -13,8 +13,8 @@ const Sidebar = () => {
       <article
         className={`${
           sidebar
-            ? "w-[86px] relative top-[76px] md:top-0"
-            : "w-[248px] absolute bottom-0 top-[76px] left-0 z-50 bg-white md:static md:top-0"
+            ? "w-[86px] absolute lg:relative top-[76px] z-50 md:top-0"
+            : "w-[248px] absolute bottom-0 top-[76px] left-0 z-50 bg-white lg:relative md:top-0"
         } h-full p-5 flex flex-col justify-between duration-150`}
       >
         <section className="flex justify-between items-center gap-3 p-2 border rounded-md">
