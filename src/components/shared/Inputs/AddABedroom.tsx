@@ -6,6 +6,7 @@ import { PlusIcon } from "@/utils/icons/Icons";
 import WhatIsIncludeTwo from "./WhatIsIncludeTwo";
 import Subtitle from "./Subtitle";
 import HrTitleTwo from "./HrTitleTwo";
+import FilterBox from "./FilterBox";
 
 const AddABedroom = () => {
   return (
@@ -69,7 +70,12 @@ const AddABedroom = () => {
             <EnableItem text="Concierge Service" />
             <EnableItem text="Shared Gym" />
             <EnableItem text="Pets Allowed" />
-            <div>waiting...</div>
+            <div>
+              <FilterBox
+                optionArr={["City", "Mountain", "Park", "Water"]}
+                placeholder="View"
+              />
+            </div>
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-3">

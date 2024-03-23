@@ -12,6 +12,7 @@ import PhotoGridTwo from "@/components/shared/Inputs/PhotoGridTwo";
 import SectionInput from "@/components/shared/Inputs/SelectionInput";
 import Subtitle from "@/components/shared/Inputs/Subtitle";
 import Title from "@/components/shared/Inputs/Title";
+import WhatAreYouLooking from "@/components/shared/Inputs/WhatAreYouLooking";
 import WhatIsInclude from "@/components/shared/Inputs/WhatIsInclude";
 import { EditPen, PlusIcon } from "@/utils/icons/Icons";
 import Image from "next/image";
@@ -199,6 +200,7 @@ const CreateAnAd = () => {
       <BedroomSection bedroom="Bedroom 4" isUrgent={true} />
       <br />
       <AddABedroom />
+      <WhatAreYouLooking />
     </article>
   );
 };

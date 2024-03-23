@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const DetailsHeader = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="sticky top-0 bg-white z-50 flex items-center justify-between">
       <Logo />
       <HeaderSearch />
       <div className="hidden md:flex items-center justify-center gap-6">
